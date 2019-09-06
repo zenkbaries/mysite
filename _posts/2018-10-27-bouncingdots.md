@@ -1,4 +1,5 @@
 ---
+layout: post
 date: "2018-10-27 07:28:11 -0600"
 canvas: true
 title: Bouncing Dots

@@ -1,4 +1,5 @@
 ---
+layout: post
 canvas: true
 title: Raindrops
 css: canvas

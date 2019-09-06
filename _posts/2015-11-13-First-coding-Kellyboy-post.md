@@ -1,4 +1,5 @@
 ---
+layout: post
 title: First Coding Kellyboy post
 date: 2015-11-13
 tags: blog
