@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Hi, I'm John Towery.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+### What I've use: 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+JavaScript, HTML5/CSS3, Ruby on Rails, JQuery, Ajax, Jekyll, GitHub, Heroku, Xcode, Atoms,
+Sublime, Chrome (dev tools), Git, SQL, MySQL, MS Access, PostgreSQL, MongoDB, MacOS,
+Windows, Linux, React.js, Node.js, MERN stack
 
+### More about me:
 
-[jekyll-organization]: https://github.com/jekyll
+Coding since early teengager when I found an Apple IIc under the Christmas tree. I am completely self­ taught, and coding has opened up a world that once had seemed pretty limited to me. I was born Deaf and learned at an early age how to overcome communication challenges. Coding created an environment where I could creatively express myself, communicate freely, and that being Deaf didn’t matter. In fact, with today’s technology, I communicate more effectively on account of being Deaf. I have to be extra attentive at all times when communicating with customers; therefore I am less likely to miss important details. I can
+also bring my experience as a Deaf consumer to the table. I can offer the perspective of a whole community that is often overlooked. For example: Add example here.
