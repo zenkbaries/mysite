@@ -28,7 +28,3 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
-# A Jekyll plugin to add metadata tags for search engines and social
-# networks to better index and display your site's content.
-# https://github.com/jekyll/jekyll-seo-tag
-gem 'jekyll-seo-tag'
