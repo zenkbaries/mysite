@@ -29,9 +29,9 @@ layout: default
                     </a>
                     {% assign p_url = nil %}
                     {% for pr in p_array %}
-                        {% if pr contains i.slug %}
-                            {% assign p_url = pr[1] %}
-                        {% endif %}
+                    {% if pr contains i.slug %}
+                    {% assign p_url = pr[1] %}
+                    {% endif %}
                     {% endfor %}
 
                     {% if p_url == nil %}{% assign p_url = i.url %}{% endif %}
