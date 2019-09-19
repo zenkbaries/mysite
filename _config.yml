@@ -58,3 +58,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  codes:
+    output: true
+    permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
