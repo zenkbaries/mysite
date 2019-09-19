@@ -1,68 +1,34 @@
 ---
 layout: default
 ---
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <hr />
-    </header>
 
-    <div class="post-content">
-        {{ content }}
+<div class="codes">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
 
-        {% assign p_array = "" | split:"|"  %}
-        {% for project in site.project %}
-        {% capture p_slug %}{{ project.url | split:"/" | last }},{{ project.url }}{% endcapture %}
-        {% assign p_slug_arr = p_slug | split:"," %}
-        {% assign p_array = p_array | push: p_slug_arr  %}
-        {% endfor %}
+    {{ content }}
 
-        <div class="projects">
-            {% include project_tags.html %}
+    {%- if site.codes.size > 0 -%}
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Codes" }}</h2> -->
+    <ul class="post-list">
+        {%- for code in site.codes -%}
+        <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ code.date | date: date_format }}</span>
+            <h3>
+                <a class="post-link" href="{{ code.url | relative_url }}">
+                    {{ code.title | escape }}
+                </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+        </li>
+        {%- endfor -%}
+    </ul>
 
-            {% for i in site.data.projects %}
-            <div class="project-item project-outer" data-tags='{{ i.tags | jsonify | downcase }}'>
-                <div class="project-inner">
-                    <a href="/static/projects/{{ i.image }}" class="thickbox">
-                        <div class="project-img bordered"
-                            style="background-image: url('/static/projects/{{ i.image }}');"></div>
-                    </a>
-                    {% assign p_url = nil %}
-                    {% for pr in p_array %}
-                    {% if pr contains i.slug %}
-                    {% assign p_url = pr[1] %}
-                    {% endif %}
-                    {% endfor %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
 
-                    {% if p_url == nil %}{% assign p_url = i.url %}{% endif %}
-                    {% if p_url %}
-                    <a class="project-detail" href="{{ p_url }}">
-                        {% endif %}
-                        <h3 class="project-headlines">{{ i.name }}</h3>
-                        {% if p_url %}
-                    </a>
-                    {% endif %}
-
-                    <div class="project-content">
-                        <div class="tag-holder">
-                            {% if i.tags %}
-                            {% for j in i.tags %}
-                            <span class="tags tag-filter" data-tag="{{ j | downcase }}"><a
-                                    href="#{{ j }}">{{ j }}</a></span>
-                            {% endfor %}
-                            {% endif %}
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        {% if i.url %}
-                        <a href="{{ i.url }}" class="project-link" target="_blank"><i class="fa fa-globe"></i> View</a>
-                        {% endif %}
-                        <span class="project-timeline">{{ i.date }}</span>
-                    </div>
-                </div>
-                <hr>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</article>
+</div>
