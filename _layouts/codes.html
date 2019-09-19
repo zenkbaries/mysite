@@ -2,23 +2,23 @@
 layout: default
 ---
 
-<div class="blog">
+<div class="codes">
     {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
 
     {{ content }}
 
-    {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    {%- if site.codes.size > 0 -%}
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Codes" }}</h2> -->
     <ul class="post-list">
-        {%- for post in site.posts -%}
+        {%- for code in site.codes -%}
         <li>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <span class="post-meta">{{ code.date | date: date_format }}</span>
             <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
+                <a class="post-link" href="{{ code.url | relative_url }}">
+                    {{ code.title | escape }}
                 </a>
             </h3>
             {%- if site.show_excerpts -%}
