@@ -21,8 +21,13 @@
 title: John Towery
 author: John Towery
 email: kbaries@gmail.com
+<<<<<<< HEAD
 description: >- # this means to ignore newlines until "baseurl:"
   A coder from Denver, CO.
+=======
+# description: >- # this means to ignore newlines until "baseurl:"
+#  A coder from Denver, CO.
+>>>>>>> cc6ebfa64d34b8656d935c54c86b73bfbcd978d0
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kbaries
