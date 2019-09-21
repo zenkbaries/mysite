@@ -21,7 +21,6 @@
 title: John Towery
 author: John Towery
 email: kbaries@gmail.com
-<<<<<<< HEAD
 description: >- # this means to ignore newlines until "baseurl:"
   A coder from Denver, CO.
 baseurl: "" # the subpath of your site, e.g. /blog
