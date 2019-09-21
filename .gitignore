@@ -2,5 +2,8 @@
 .jekyll-cache
 Gemfile.lock
 *.gem
-_site/*
+_site
 vendor/**
+
+.bundle
+
