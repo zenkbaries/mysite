@@ -3,8 +3,8 @@ author: John Towery
 email: kbaries@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A coder from Denver, CO.
-baseurl: "/mysite" # the subpath of your site, e.g. /blog
-url: "http://johntowery.work" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kbaries
 github_username: zenkbaries
 linkedin_username: jtowery
@@ -46,5 +46,8 @@ collections:
     output: true
     permalink: /:collection/:name
   projects:
+    output: true
+    permalink: /:collection/:name
+  pages:
     output: true
     permalink: /:collection/:name
