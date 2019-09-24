@@ -2,10 +2,10 @@
 layout: default
 ---
 
-## [About](/about)
+## [About](about)
 
-## [Blogs](blogs/)
+## [Blogs](blogs)
 
 ## [Projects](projects)
 
-## [Codes](/codes1/)
+## [Codes](codes)
