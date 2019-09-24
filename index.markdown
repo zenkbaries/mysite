@@ -6,6 +6,6 @@ layout: default
 
 ## [Blogs](blogs/)
 
-## [Projects](/projects/)
+## [Projects](projects)
 
 ## [Codes](/codes/)
