@@ -8,4 +8,4 @@ layout: default
 
 ## [Projects](projects)
 
-## [Codes](/codes/)
+## [Codes](/codes1/)
